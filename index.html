@@ -10,9 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container">
-        <h3 class="mt-3">Intraday Stock Calculator</h3>
+        <h3 class="mt-3 text-center"><span class="border-bottom bg-white">&nbsp;Intraday Stock Calculator&nbsp;</span></h3>
         <br />
 
         <div class="container-fluid">
@@ -20,15 +20,15 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control allow_decimal fw-bold font-monospace" id="bprin"
+                            <input type="text" class="form-control allow_decimal fw-bold font-monospace shadow-lg bg-white border border-info" id="bprin"
                                 placeholder="Enter priciple amount" name="bprin" required autocomplete="off"
-                                value="100000" />
+                                value="100000.00" />
                             <label for="bprin">Priciple Amount (<b>₹</b>)</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control allow_decimal fw-bold font-monospace" id="lquant"
+                            <input type="text" class="form-control allow_decimal fw-bold font-monospace shadow-lg bg-white border border-info" id="lquant"
                                 placeholder="Enter buy quantity" name="lquant" required autocomplete="off" disabled />
                             <label for="lquant">Quantity (<b>Units</b>)</label>
                         </div>
@@ -37,14 +37,14 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control allow_decimal fw-bold font-monospace" id="lbuy"
+                            <input type="text" class="form-control allow_decimal fw-bold font-monospace shadow-lg bg-white" id="lbuy"
                                 placeholder="Enter buy price" name="lbuy" autofocus required autocomplete="off" />
                             <label for="lbuy">Entry Price (<b>₹</b>)</label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control allow_decimal fw-bold font-monospace" id="lstar"
+                            <input type="text" class="form-control allow_decimal fw-bold font-monospace shadow-lg bg-white border border-warning" id="lstar"
                                 placeholder="Enter short percentage" name="lstar" required autocomplete="off"
                                 value="0.5" />
                             <label for="lstar">Short (<b>%</b>)</label>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="col">
                         <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control allow_decimal fw-bold font-monospace" id="ltar"
+                            <input type="text" class="form-control allow_decimal fw-bold font-monospace shadow-lg bg-white border border-warning" id="ltar"
                                 placeholder="Enter long percentage" name="ltar" required autocomplete="off"
                                 value="0.5" />
                             <label for="ltar">Long (<b>%</b>)</label>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="card mb-3 mt-3">
+                        <div class="card mb-3 mt-3 shadow-lg bg-white border border-secondary">
                             <div class="card-body">Short Exit <b>&#126;</b> (<b>₹</b>)
                                 <span id="longsl" class="fw-bold font-monospace"></span>
                             </div>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card mb-3 mt-3">
+                        <div class="card mb-3 mt-3 shadow-lg bg-white border border-secondary">
                             <div class="card-body">Long Exit <b>&#126;</b> (<b>₹</b>)
                                 <span id="longsp" class="fw-bold font-monospace"></span>
                             </div>
@@ -84,14 +84,14 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card mb-2 mt-2">
+                    <div class="card mb-2 mt-2 shadow-lg bg-white border border-success">
                         <div class="card-body">Short Profit <b>&#126;</b> (<b>₹</b>)
                             <span id="spro" class="fw-bold font-monospace"></span>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-2 mt-2">
+                    <div class="card mb-2 mt-2 shadow-lg bg-white border border-success">
                         <div class="card-body">Long Profit <b>&#126;</b> (<b>₹</b>)
                             <span id="lpro" class="fw-bold font-monospace"></span>
                         </div>

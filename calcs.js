@@ -36,7 +36,7 @@ $(document).ready(function () {
 
         if (lb > prin) {
             lb = 0;
-            $("#bpgr").empty().append('<div class="alert alert-danger"><strong>Buy price is greaterthan Principle amount.</strong></div>');
+            $("#bpgr").empty().append('<div class="alert alert-danger shadow-sm"><strong>Buy price is greaterthan Principle amount.</strong></div>');
         } else {
             $("#bpgr").empty();
             perc = lb * (lt/100);
@@ -48,7 +48,6 @@ $(document).ready(function () {
             lsp = lb + perc;
             prof = perc * lq;
             sprof = lslflag * lq;
-            console.log(sprof);
         }
 
         var flsp = lsp.toFixed(2);
